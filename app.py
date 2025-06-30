@@ -339,10 +339,6 @@ if all(not logs[n].empty for n in [player1_name, player2_name]):
                 st.session_state["last_suggest"] = results
             st.write(f"⏱️ AI response time: {int(t1-t0)} sec")
 
-    st.markdown(
-        "**[Suggest / Retry AI Recommendation]**: Press this button to get AI suggestions. If you see a mistake or want a different answer, just press again!"
-    )
-
     if st.session_state.get("last_suggest"):
         for rec in st.session_state["last_suggest"]:
             players = rec["players"]
