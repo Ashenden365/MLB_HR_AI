@@ -1,0 +1,6 @@
+streamlit
+pandas
+altair
+pybaseball
+MLB-StatsAPI
+requests
